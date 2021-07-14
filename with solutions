@@ -1,0 +1,12 @@
+# Write a Python program to get a string from a given string
+# where all occurrences of its first char have been changed to '$', except the first char itself.
+
+string_input = input('Enter a string: ')
+
+if string_input.count('r') > 1:
+    new_string = string_input.replace('r', '$')
+    value = new_string.replace('$', 'r', 1)
+    print(value)
+    print('success')
+else:
+    print('error')
